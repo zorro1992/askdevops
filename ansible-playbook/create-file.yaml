@@ -1,0 +1,21 @@
+# ---
+# name: Create file with a date in name
+# hosts: localhost
+# become: no
+# gather_facts: yes
+
+# tasks:
+#   - name: create file with a date in name
+#     file:
+#       path: "/var/log.ansible.log"
+#       state: touch
+
+---
+
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: Create a new file with permissions
+    file:
+      path: "/var/log/ansible.log"
+      state: touch
