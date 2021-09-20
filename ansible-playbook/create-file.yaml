@@ -1,3 +1,5 @@
+# This playbook is used to create a file and both playbooks are example
+
 # ---
 # name: Create file with a date in name
 # hosts: localhost
