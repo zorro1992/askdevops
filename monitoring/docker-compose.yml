@@ -28,3 +28,49 @@ services:
       - '9093:9093'
     depends_on:
       - prometheus
+# Jenkins
+  jenkins:
+    image: jenkins/jenkins:lts
+    privileged: true
+    user: root
+    restart: always
+    ports:
+      - '8080:8080'
+      - '50000:50000'
+    container_name: jenkins
+    volumes:
+      - "./jenkins:/var/jenkins_home"
+# Apache Spark
+  spark:
+    image: docker.io/bitnami/spark:3
+    environment:
+      - SPARK_MODE=master
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+    ports:
+      # Port mapping <port_on_localhost>:<port_on_container>
+      - '8089:8080'
+  spark-worker-1:
+    image: docker.io/bitnami/spark:3
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark:7077
+      - SPARK_WORKER_MEMORY=1G
+      - SPARK_WORKER_CORES=1
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+  spark-worker-2:
+    image: docker.io/bitnami/spark:3
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark:7077
+      - SPARK_WORKER_MEMORY=1G
+      - SPARK_WORKER_CORES=1
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
