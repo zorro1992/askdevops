@@ -1,16 +1,8 @@
-import json
+def divide(a,b):
+    try:
+      return a/b
+    expcet ZeroDivisionError:
+      return "Wrong division"
 
-with open('banks.json') as f:
-  data = json.load(f)
-
-#print(data)
-
-# for key in data.items():
-#     print(key)
-
-# bank_code="AACX"
-
-# print(data[bank_code]["ifsc"])
-
-
-
+  
+divide(2/0)
