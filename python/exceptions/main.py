@@ -16,11 +16,24 @@
 # 	print(e)
 
 
+# Example 1 
+
+while True:
+	x = int(input("Please enter a number: "))
+	break
+
+# while True:
+# 	try:
+# 		x = int(input("Please enter a number: "))
+# 		break
+# 	except ValueError:
+# 		print("Oops!  That was no valid number.  Try again...")
 
 
-my_list=[3,4,5]
+# my_list=[3,4,5]
 
-try:
-	print(my_list[4])
-except Exception as e:
-	print("Check your list index call: ",e)
+# try:
+# 	print(my_list[4])
+# except Exception as e:
+# 	print("Check your list index call: ",e)
+
