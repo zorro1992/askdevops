@@ -18,9 +18,9 @@
 
 # Example 1 
 
-while True:
-	x = int(input("Please enter a number: "))
-	break
+# while True:
+# 	x = int(input("Please enter a number: "))
+# 	break
 
 # while True:
 # 	try:
@@ -37,3 +37,10 @@ while True:
 # except Exception as e:
 # 	print("Check your list index call: ",e)
 
+# print(dir(__builtins__))
+
+# for x in dir(__builtins__):
+# 	print(x)
+
+import json
+print(dir(json))
