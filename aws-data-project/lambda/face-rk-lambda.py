@@ -11,5 +11,5 @@ def lambda_handler(event, context):
         response = rekognition.recognize_celebrities(Image={'S3Object':{'Bucket': bucket,'Name': key}})
         for celebrity in response['CelebrityFaces']:
     	    print ('Name: ' + celebrity['Name'])
-    	    
+    
     detect_faces(BUCKET,KEY)
