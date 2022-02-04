@@ -1,2 +1,2 @@
 # askdevops
-This repo contain the devops code example , content
+This is my personal repo where I am collecting all topics,code and examples related to DevOps and Data Platform.
