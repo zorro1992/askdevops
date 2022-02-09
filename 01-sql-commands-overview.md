@@ -68,3 +68,19 @@ Example
     emp_department varchar(20)
   );
   ```
+Drop table
+  ```
+  drop table <table_name>;
+  ```
+### Inserting rows to tables
+  ```
+  insert into employee value (01,"Raghu","Data");
+  ```
+### Insert multiple rows
+  Insert multiple rows to employee table
+  ```
+    insert into employee 
+        value (01,"Raghu","Data"),
+              (02,"AJ","Data"),
+              (03,"PJ","Data");
+  ```
