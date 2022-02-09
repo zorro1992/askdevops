@@ -1,4 +1,6 @@
-### SQL Commands overview 
+### SQL Commands overview -- MySQL
+
+Here we are using MySQL which is part of DBMS system
 
 1) DDL -- Data Definition Language
 ```  
@@ -15,3 +17,54 @@ INSERT , UPDATE, DELETE
 ```  
 SELECT  
 ```  
+
+### Databases 
+
+Creating a database
+```
+create database <name>;
+```
+
+Dropping a database
+```
+drop database <name>;
+```
+
+Checking the database we are currently in
+```
+select database();
+```
+To use a specifc database (db)
+```
+use <database name>
+```
+
+### Data Types in SQL
+
+For numbers 
+- INT
+- FLOAT
+
+For string
+- VARCHAR(<max length of string>)
+
+### Tables
+
+Normal syntax 
+
+```
+CREATE TABLE <table_name>
+  (
+    column_name data_type,
+    column_name data_type
+  );
+```
+
+Example
+  ```
+  create table employee (
+    emp_id int,
+    emp_name varchar(50),
+    emp_department varchar(20)
+  );
+  ```
