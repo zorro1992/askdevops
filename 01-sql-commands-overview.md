@@ -72,6 +72,13 @@ Drop table
   ```
   drop table <table_name>;
   ```
+### Show , Describe table
+  ```
+  show column from <table_name>;
+  ```
+  ```
+  desc <table_name>
+  ```
 ### Inserting rows to tables
   ```
   insert into employee value (01,"Raghu","Data");
