@@ -158,7 +158,7 @@ Drop table
   ```
   
   We can also directly define primary key with the column 
-    ```
+  ```
    create table employee (
     emp_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     emp_name varchar(50),
