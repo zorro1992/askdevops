@@ -1,5 +1,10 @@
 ### Understanding different CRUD operations 
 
+C - CREATE
+R - READ
+U - UPDATE
+D - DELETE
+
 Let's create some tables and insert data (commands from colte steel)
 
 ```
@@ -38,4 +43,15 @@ VALUES ('Ringo', 'Tabby', 4),
 - select * from cats where name = "Misty";
 Case-insensitve 
 - select * from cats where name = "MISTY";
+
+### Alias with select command
+
+- select cat_id as id from cats;
+
+### Update 
+
+```
+update cats set breed = "shorthair" where breed = "Tabby"
+```
+
 
