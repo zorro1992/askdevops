@@ -54,4 +54,9 @@ Case-insensitve
 update cats set breed = "shorthair" where breed = "Tabby"
 ```
 
+### Delete 
 
+```
+delete from cats where name="Egg"
+```
+Here you can see that cat_id won't be changed or re-arranged.
