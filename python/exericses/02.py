@@ -9,5 +9,5 @@ def foo(a=2, b):
 
 #  Always put non-default parameters first, followed by default ones.
 
-def foo(b,a=2):
+def foo(b, a=2):
     return a + b

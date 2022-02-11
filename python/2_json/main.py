@@ -4,18 +4,18 @@ import plotly.io as pio
 with open('data.json') as data_file:
     data = json.load(data_file)
 
-#print(data)
+# print(data)
 # name=data[0]['name']
 # print(name)
 
-final={}
-output=[]
+final = {}
+output = []
 for item in data:
-    name=item['name']
-    country=item['country']
+    name = item['name']
+    country = item['country']
 
     filter_data = {
-        "name":name,
+        "name": name,
         "country": country
     }
 

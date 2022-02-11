@@ -1,4 +1,4 @@
-# The below program gives error why ? 
+# The below program gives error why ?
 
 '''
 def foo(a, b):
@@ -15,8 +15,10 @@ The function output is what produces a None object because the function definiti
 Fix it by using return  instead of print :
 '''
 
+
 def foo(a, b):
     return a + b
- 
+
+
 x = foo(2, 3) * 10
 print(x)

@@ -6,7 +6,7 @@
 # 	print(e)
 
 
-# Custom Expections 
+# Custom Expections
 
 # try:
 # 	fo=open("nari.txt")
@@ -16,7 +16,7 @@
 # 	print(e)
 
 
-# Example 1 
+# Example 1
 
 # while True:
 # 	x = int(input("Please enter a number: "))
