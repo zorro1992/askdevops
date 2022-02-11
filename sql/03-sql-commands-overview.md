@@ -1,3 +1,9 @@
+### Overview
+
+#### Load the data for some action
+
+- create table 
+```
 CREATE TABLE books 
 	(
 		book_id INT NOT NULL AUTO_INCREMENT,
@@ -9,7 +15,10 @@ CREATE TABLE books
 		pages INT,
 		PRIMARY KEY(book_id)
 	);
+```
+- Insert data into table
 
+```
 INSERT INTO books (title, author_fname, author_lname, released_year, stock_quantity, pages)
 VALUES
 ('The Namesake', 'Jhumpa', 'Lahiri', 2003, 32, 291),
@@ -28,4 +37,4 @@ VALUES
 ('Cannery Row', 'John', 'Steinbeck', 1945, 95, 181),
 ('Oblivion: Stories', 'David', 'Foster Wallace', 2004, 172, 329),
 ('Consider the Lobster', 'David', 'Foster Wallace', 2005, 92, 343);
-
+```
