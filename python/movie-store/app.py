@@ -19,16 +19,16 @@ database.create_tables()
 
 
 def prompt_add_movie():
-    title=input("Which movies you want to store ?: ")
-    release_date=input("When was this released in (dd-mm-yyyy): ")
-    parsed_date=datetime.datetime.strptime(release_date,"%d-%m-%Y")
-    timestamp= parsed_date.timestamp()
+    title = input("Which movies you want to store ?: ")
+    release_date = input("When was this released in (dd-mm-yyyy): ")
+    parsed_date = datetime.datetime.strptime(release_date, "%d-%m-%Y")
+    timestamp = parsed_date.timestamp()
     print(timestamp)
-    database.add_movie(title,timestamp)
+    database.add_movie(title, timestamp)
 
 
 def clean_table():
-    promt_cleanup=input("Do you want to drop the table? Y/N : ")
+    promt_cleanup = input("Do you want to drop the table? Y/N : ")
     if promt_cleanup == "Y":
         database.drop_table()
     else:
