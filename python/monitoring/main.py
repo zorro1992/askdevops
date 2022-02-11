@@ -1,6 +1,6 @@
 import psutil
 
-#CPU times
+# CPU times
 print(psutil.cpu_times())
 
 # Avg CPU load

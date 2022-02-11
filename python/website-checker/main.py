@@ -22,5 +22,3 @@ with open("website_status.csv", "w", newline="") as file:
     csv_writers = csv.writer(file)
     for key in status_dict.keys():
         csv_writers.writerow([key, status_dict[key]])
-        
-        

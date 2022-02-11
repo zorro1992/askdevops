@@ -1,5 +1,5 @@
 '''
-Global Variables and 
+Global Variables and
 
 What will the following script output? Please try to do this by mind if you can.
 
@@ -33,5 +33,5 @@ def foo():
 c = 3
 print(foo())
 
-Answer is 2 
+Answer is 2
 '''
