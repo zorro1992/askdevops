@@ -38,3 +38,75 @@ VALUES
 ('Oblivion: Stories', 'David', 'Foster Wallace', 2004, 172, 329),
 ('Consider the Lobster', 'David', 'Foster Wallace', 2005, 92, 343);
 ```
+
+
+### Concat in SQL
+
+Syntax : 
+
+- concat(x,y,z)
+- concat(column,anothercolumn)
+- Adding a space in concat
+- concat(author_fname, '', author_lname)
+
+```
+select concat(author_fname, ' ', author_lname) from books;
+```
+- Use alias
+```
+select concat(author_fname, ' ', author_lname) as full_name from books;
+```
+
+Using concat_ws
+- When using concat_ws you can pass the seperator as the first argument.
+```
+select concat_ws(' ' , author_fname,author_lname) as full_name from books;
+```
+
+### SUBSTRING
+
+Short form **substr**
+
+Example
+- Here 1,4 are index and in SQL index starts from 1 
+```
+select substring('Hello World',1,4);
+select substring('Hello World',4);
+select substring('Hello World',-4);
+```
+
+What is the string is --- Where I'm Calling From: Selected Stories , Here you can see we have ' in the string so this can break
+
+To overcome this we can use "" 
+```
+select substring("Where I'm Calling From: Selected Storie",1,5);
+```
+```
+select substring(title,1,10) as short_title from books;
+```
+
+Mixing substring and concat
+
+```
+select concat(substring(title,1,10), '...') as short_title from books;
+```
+
+### Replace
+
+- Replace parts of string 
+- It is case senstive
+- Example
+```
+select replace('hello world', 'hell', '$%$#$');
+select replace('hello world', 'l', '7');
+select replace('hello world', 'o', 'O');
+select replace('hellO world', 'o', 'O'); --- Case senstive example
+```
+In the example below you can see I have replacing all letter 'e' in title with number 3
+```
+select replace(title,'e',3) from books;
+```
+Combining substring and replace.
+```
+select substring(replace(title,'e',3),1,6) from books;
+```

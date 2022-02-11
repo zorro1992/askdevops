@@ -1,19 +1,19 @@
- 
-name: Docker Image CI
+name: flake8 Lint
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push, pull_request]
 
 jobs:
-    build:
+  flake8-lint:
     runs-on: ubuntu-latest
-
-   steps:
-   - uses: actions/checkout@v2  
-   - name: Python Linter
-     uses: sunnysid3up/python-linter@master
-     with:
-       source: "python"
+    name: Lint
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v2
+      - name: Set up Python environment
+        uses: actions/setup-python@v1
+        with:
+          python-version: "3.8"
+      - name: flake8 Lint
+        uses: py-actions/flake8@v2
+        with:
+          path: "python"
