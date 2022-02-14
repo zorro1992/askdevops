@@ -62,3 +62,24 @@ ORDER BY released_year DESC LIMIT 5;
 # This is just like adding a random end number so that the limit shows all the data after 95 rows.
 SELECT * FROM tbl LIMIT 95,18446744073709551615;
 ```
+### Like
+
+- Like is a simple search option given in SQL where in you can search the data in a column without knowing the complete name
+- Let's say "harry" -- from harry potter book
+- uses wildcard - %
+- If you add %% in between then it will seach the string inside the wildcard
+- But if you need something like name starts with ra then you can do ra% meaning the name should start with letter ra but can end with anything.
+
+```
+SELECT title, author_fname FROM books WHERE author_fname LIKE '%da%';
+ 
+SELECT title, author_fname FROM books WHERE author_fname LIKE 'da%';
+ 
+SELECT title FROM books WHERE  title LIKE 'the';
+ 
+SELECT title FROM books WHERE  title LIKE '%the';
+ 
+SELECT title FROM books WHERE title LIKE '%the%';
+```
+
+### 
