@@ -82,4 +82,9 @@ SELECT title FROM books WHERE  title LIKE '%the';
 SELECT title FROM books WHERE title LIKE '%the%';
 ```
 
-### 
+- Like also has another wildcard that is "_"
+- There _ means that number of char
+
+```
+SELECT title, stock_quantity FROM books WHERE stock_quantity LIKE '___
+```
