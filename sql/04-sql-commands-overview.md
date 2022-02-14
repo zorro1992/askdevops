@@ -1,5 +1,9 @@
 ### Selection aggregation in SQL (MySQL)
 
+- Distinct
+- Order BY
+- Like
+
 Insert some new data to books table;
 
 ```
