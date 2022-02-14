@@ -123,3 +123,19 @@ SELECT CHAR_LENGTH('Hello World');
 # CHAR_LENGTH with concat.
 SELECT CONCAT(author_lname, ' is ', CHAR_LENGTH(author_lname), ' characters long') FROM books;
 ```
+
+### Upper and Lower 
+- We can make strings to all caps or all lower letters
+
+```
+select upper('hello world');
+select lower('hello world');
+```
+```
+select upper(title) from books;
+```
+Contact and upper 
+```
+SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
+```
+
