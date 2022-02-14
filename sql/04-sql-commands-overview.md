@@ -48,4 +48,17 @@ FROM books ORDER BY 2;
 SELECT author_fname, author_lname FROM books 
 ORDER BY author_lname, author_fname;
 ```
+### Limit
+- Limit can be used to limit the data that is getting displayed.
+- Its helpful in many cases while developing the sql query atleast
 
+```
+ 
+SELECT * FROM books LIMIT 1;
+
+SELECT title, released_year FROM books 
+ORDER BY released_year DESC LIMIT 5;
+
+# This is just like adding a random end number so that the limit shows all the data after 95 rows.
+SELECT * FROM tbl LIMIT 95,18446744073709551615;
+```
