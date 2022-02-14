@@ -30,3 +30,22 @@ SELECT DISTINCT CONCAT(author_fname,' ', author_lname) FROM books;
  
 SELECT DISTINCT author_fname, author_lname FROM books;
 ```
+
+### Order By
+
+- Order by data before displaying
+- Order by is also ascending
+
+```
+SELECT released_year FROM books ORDER BY released_year;
+SELECT released_year FROM books ORDER BY released_year DESC;
+
+SELECT title, author_fname, author_lname 
+FROM books ORDER BY 2;
+```
+
+```
+SELECT author_fname, author_lname FROM books 
+ORDER BY author_lname, author_fname;
+```
+
