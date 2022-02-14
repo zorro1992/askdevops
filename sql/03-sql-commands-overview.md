@@ -110,3 +110,16 @@ Combining substring and replace.
 ```
 select substring(replace(title,'e',3),1,6) from books;
 ```
+
+### Reverse
+To reverse the data in a column
+```
+select reverse(author_fname) from books;
+```
+
+### CHAR_LENGTH
+```
+SELECT CHAR_LENGTH('Hello World');
+# CHAR_LENGTH with concat.
+SELECT CONCAT(author_lname, ' is ', CHAR_LENGTH(author_lname), ' characters long') FROM books;
+```
