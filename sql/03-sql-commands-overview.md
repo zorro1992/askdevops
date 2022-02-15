@@ -1,5 +1,12 @@
 ### Overview
 
+- Concat
+- Substring
+- Replace
+- Reverse
+- Char_length
+- Upper and Lower
+
 #### Load the data for some action
 
 - create table 
