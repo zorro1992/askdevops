@@ -12,3 +12,7 @@
 - Create a file in cloud9 with .sql extenstion
 - Login to mysql terminal
 - Then you can run `source <file-name>.sql`
+
+### Free PostgresSQL 
+
+- [ElephentSQL](https://www.elephantsql.com/)
