@@ -9,6 +9,8 @@ Helpful Links :
 
 ### Python syntax auto check and fix 
 
+```
 pip3 install --upgrade autopep8
 autopep8 --in-place --aggressive --aggressive *.py 
 autopep8 --in-place --recursive .
+```
