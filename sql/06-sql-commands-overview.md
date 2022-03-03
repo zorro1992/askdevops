@@ -56,4 +56,10 @@ VALUES('Larry', '1943-12-25', '04:10:42', '1943-12-25 04:10:42');
 SELECT * FROM people;
 ```
 
+- When doing insert into the table, We might also wish to add timestamp, For that you can use below sql commands 
+```
+CURDATE() -- Current date
+CURTIME() -- Current time
+NOW() -- Current date and time 
+```
 
