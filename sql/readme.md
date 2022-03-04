@@ -16,3 +16,13 @@
 ### Free PostgresSQL 
 
 - [ElephentSQL](https://www.elephantsql.com/)
+
+### Docker setup 
+
+- Enable docker and make sure docker process is running 
+
+```
+docker run --name mysql-training -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<Some-password> -d mysql
+```
+
+- Download mysql editor and then connect to mysql editor with details of username and password. It will connect to the docker container 
