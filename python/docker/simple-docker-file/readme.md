@@ -1,0 +1,4 @@
+- Install docker on EC2 instance `yum install docker`
+- Start docker container `systemctl start docker`
+- Create docker image `docker build --tag python-docker .`
+- Now run the docker image `docker run python-docker`
