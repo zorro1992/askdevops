@@ -6,6 +6,7 @@ Setup a ubuntu os based EC2 instance
 
 Install docker 
 ```
+apt-get update
 apt install docker.io
 ```
 
