@@ -1,0 +1,18 @@
+22/04/02 13:20:22 INFO 01-HelloSpark: Starting the Spark Job
+22/04/02 13:20:22 INFO 01-HelloSpark: app.author=Raghu
+spark.app.id=local-1648898420925
+spark.app.name=01-HelloSpark
+spark.app.startTime=1648898419622
+spark.driver.extraJavaOptions=-Dlog4j.configuration=file:log4j.properties -Dspark.yarn.app.container.log.dir=app-logs -Dlogfile.name=hello-spark
+spark.driver.host=raghunadanasair.fritz.box
+spark.driver.port=62921
+spark.executor.id=driver
+spark.master=local[3]
+spark.rdd.compress=True
+spark.serializer.objectStreamReset=100
+spark.sql.warehouse.dir=file:/Users/raghunandanask/PycharmProjects/01-HelloSpark/spark-warehouse
+spark.submit.deployMode=client
+spark.submit.pyFiles=
+spark.ui.showConsoleProgress=true
+spark.yarn.app.container.log.dir=app-logs
+22/04/02 13:20:22 INFO 01-HelloSpark: Ending Spark Job
